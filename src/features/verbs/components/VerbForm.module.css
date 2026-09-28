@@ -1,0 +1,100 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.field input {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.field input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox input {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  accent-color: var(--accent);
+}
+
+.checkbox label {
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.error {
+  color: var(--danger-strong);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.actions button {
+  padding: 0.6rem 1.1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s, opacity 0.15s;
+  border: none;
+}
+
+.actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cancelBtn {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.cancelBtn:hover:not(:disabled) {
+  background: var(--bg-hover);
+}
+
+.submitBtn {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
